@@ -49,14 +49,7 @@
 
 <h3 align="left">Languages and Tools:</h3>
 <p align="left">
-  <a href="https://developer.android.com" target="_blank">
-    <img
-      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg"
-      alt="android"
-      width="40"
-      height="40"
-    />
-  </a>
+  
   <a href="https://getbootstrap.com" target="_blank">
     <img
       src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg"
@@ -132,14 +125,7 @@
       height="40"
     />
   </a>
-  <a href="https://www.mathworks.com/" target="_blank">
-    <img
-      src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png"
-      alt="matlab"
-      width="40"
-      height="40"
-    />
-  </a>
+  
   <a href="https://www.mongodb.com/" target="_blank">
     <img
       src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg"
