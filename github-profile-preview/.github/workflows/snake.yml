@@ -1,0 +1,38 @@
+# Generates contribution-snake SVGs into ./assets (always visible in README).
+name: Generate contribution snake
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # daily 00:00 UTC
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - "assets/github-contribution-grid-snake.svg"
+      - "assets/github-contribution-grid-snake-dark.svg"
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate snake SVGs
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: musavirchukkan
+          outputs: |
+            assets/github-contribution-grid-snake.svg
+            assets/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      - name: Commit & push assets
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: refresh contribution snake assets"
+          file_pattern: assets/*.svg
