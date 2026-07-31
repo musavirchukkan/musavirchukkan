@@ -1,15 +1,16 @@
 #!/usr/bin/env bash
-# Deploy profile from cursor-cloud to musavirchukkan/musavirchukkan
-# Run locally: bash scripts/deploy-profile.sh
+# Deploy profile/live to a SEPARATE musavirchukkan/musavirchukkan repo
+# (Use this only if you keep cursor-cloud and profile as two repos.)
+# If you renamed this repo to musavirchukkan, use scripts/promote-to-root.sh instead.
 set -euo pipefail
 
 REPO="${PROFILE_REPO:-$HOME/musavirchukkan-profile}"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
-SOURCE="$ROOT/profile-deploy"
+SOURCE="$ROOT/profile/live"
 
 if [[ ! -d "$SOURCE" ]]; then
-  echo "Missing $SOURCE — run from cursor-cloud repo root after pulling main."
+  echo "Missing $SOURCE"
   exit 1
 fi
 
@@ -22,34 +23,23 @@ cd "$REPO"
 git checkout main
 git pull origin main
 
-# Extra safety backup if not already present
 if [[ ! -f README.backup-2026-07-31.md ]]; then
-  cp README.md README.backup-2026-07-31.md
-  echo "Saved README.backup-2026-07-31.md"
+  cp README.md README.backup-2026-07-31.md 2>/dev/null || true
 fi
 
 cp "$SOURCE/README.md" ./README.md
 mkdir -p assets .github/workflows
 cp "$SOURCE/assets/"*.svg ./assets/
-cp "$SOURCE/.github/workflows/"*.yml ./github/workflows/
+cp "$SOURCE/workflows/"*.yml ./github/workflows/
 
 git add README.md assets .github/workflows
-if [[ -f README.backup-2026-07-31.md ]]; then
-  git add README.backup-2026-07-31.md
-fi
+[[ -f README.backup-2026-07-31.md ]] && git add README.backup-2026-07-31.md
 
 if git diff --cached --quiet; then
-  echo "Nothing to commit — profile already up to date."
+  echo "Profile repo already up to date."
   exit 0
 fi
 
-git commit -m "Rewrite GitHub profile README
-
-Includes assets for stats, languages, and contribution snake plus
-daily refresh workflows. Previous README in README.backup-2026-07-31.md."
-
+git commit -m "Update GitHub profile from cursor-cloud profile/live"
 git push origin main
-
-echo ""
-echo "Done! Profile live at: https://github.com/musavirchukkan"
-echo "Enable Actions on the repo if you haven't already (Settings → Actions)."
+echo "Deployed to https://github.com/musavirchukkan"
