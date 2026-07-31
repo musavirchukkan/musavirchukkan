@@ -299,8 +299,9 @@ Full index → [musavirchukkan.in/projects](https://musavirchukkan.in/projects)
 ## Live metrics
 
 <div align="center">
+  <!-- Official github-profile-trophy.vercel.app returns 402 DEPLOYMENT_DISABLED; use a community load-balancing mirror -->
   <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=musavirchukkan&theme=onedark&no-frame=true&column=7&margin-w=8&margin-h=8" alt="GitHub trophies" />
+    <img src="https://github-profile-trophy-orcin-eta.vercel.app/?username=musavirchukkan&theme=onedark&no-frame=true&column=6&margin-w=8&margin-h=8" alt="GitHub trophies" />
   </a>
 </div>
 
