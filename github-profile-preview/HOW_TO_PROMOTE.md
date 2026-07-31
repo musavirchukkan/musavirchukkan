@@ -8,8 +8,9 @@ https://github.com/musavirchukkan/musavirchukkan
 
 | File | Purpose |
 | --- | --- |
-| `README.md` | Full profile rewrite (About, projects, stack, stats, snake, achievements) |
-| `.github/workflows/snake.yml` | Daily contribution-snake SVG generator |
+| `README.md` | Interactive/technical profile rewrite |
+| `assets/*.svg` | Pre-generated contribution snake (works in preview immediately) |
+| `.github/workflows/snake.yml` | Daily refresh of snake SVGs into `./assets` |
 
 ## Review checklist
 
