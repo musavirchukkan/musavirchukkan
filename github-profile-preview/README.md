@@ -306,9 +306,10 @@ Full index → [musavirchukkan.in/projects](https://musavirchukkan.in/projects)
 </div>
 
 <div align="center">
+  <!-- Official github-readme-stats.vercel.app is DEPLOYMENT_PAUSED (503). Cards are committed under ./assets and refreshed by Actions. -->
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=musavirchukkan&show_icons=true&theme=dark&hide_border=true&count_private=true&include_all_commits=true" />
-    <img height="168" src="https://github-readme-stats.vercel.app/api?username=musavirchukkan&show_icons=true&theme=default&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub stats" />
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/github-stats-dark.svg" />
+    <img height="168" src="./assets/github-stats.svg" alt="GitHub stats" />
   </picture>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=musavirchukkan&theme=dark&hide_border=true" />
@@ -318,8 +319,8 @@ Full index → [musavirchukkan.in/projects](https://musavirchukkan.in/projects)
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=musavirchukkan&layout=compact&theme=dark&hide_border=true&langs_count=8" />
-    <img height="168" src="https://github-readme-stats.vercel.app/api/top-langs/?username=musavirchukkan&layout=compact&theme=default&hide_border=true&langs_count=8" alt="Top languages" />
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/top-langs-dark.svg" />
+    <img height="168" src="./assets/top-langs.svg" alt="Top languages" />
   </picture>
   <img height="168" src="https://github-readme-activity-graph.vercel.app/graph?username=musavirchukkan&theme=react-dark&hide_border=true&area=true" alt="Contribution activity graph" />
 </div>

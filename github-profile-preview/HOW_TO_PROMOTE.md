@@ -9,8 +9,10 @@ https://github.com/musavirchukkan/musavirchukkan
 | File | Purpose |
 | --- | --- |
 | `README.md` | Interactive/technical profile rewrite |
-| `assets/*.svg` | Pre-generated contribution snake (works in preview immediately) |
-| `.github/workflows/snake.yml` | Daily refresh of snake SVGs into `./assets` |
+| `assets/github-contribution-grid-snake*.svg` | Contribution snake animation |
+| `assets/github-stats*.svg` / `assets/top-langs*.svg` | Stats cards (official host is often paused) |
+| `.github/workflows/snake.yml` | Daily refresh of snake SVGs |
+| `.github/workflows/stats-cards.yml` | Daily refresh of stats + top-langs SVGs |
 
 ## Review checklist
 
