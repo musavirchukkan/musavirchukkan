@@ -30,12 +30,13 @@ cp README.md README.backup.md
 
 # Copy preview files over
 cp /path/to/github-profile-preview/README.md ./README.md
-mkdir -p .github/workflows
+mkdir -p .github/workflows assets
 cp /path/to/github-profile-preview/.github/workflows/snake.yml .github/workflows/snake.yml
+cp /path/to/github-profile-preview/assets/*.svg ./assets/
 
 # Remove the PREVIEW comment at the top of README.md if you want
 # Commit & push
-git add README.md .github/workflows/snake.yml
+git add README.md assets .github/workflows/snake.yml
 git commit -m "Rewrite GitHub profile README"
 git push origin main
 ```
