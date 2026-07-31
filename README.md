@@ -2,18 +2,18 @@
 
 ## GitHub profile README preview
 
-A rewritten GitHub Profile README for **[musavirchukkan](https://github.com/musavirchukkan)** is staged here for review — **your live profile has not been changed**.
+A rewritten GitHub Profile README for **[musavirchukkan](https://github.com/musavirchukkan)** — **approved, ready to deploy**.
 
-### Preview location
+| | |
+| --- | --- |
+| **Preview** | [`github-profile-preview/README.md`](./github-profile-preview/README.md) |
+| **Deploy guide** | [`github-profile-preview/DEPLOY.md`](./github-profile-preview/DEPLOY.md) ← **start here** |
+| **Old profile backup** | [`github-profile-preview/backup/live-profile-2026-07-31/README.md`](./github-profile-preview/backup/live-profile-2026-07-31/README.md) |
+| **PR** | https://github.com/musavirchukkan/cursor-cloud/pull/1 |
 
-📁 [`github-profile-preview/`](./github-profile-preview/)
+### Quick summary
 
-- [`github-profile-preview/README.md`](./github-profile-preview/README.md) — proposed profile
-- [`github-profile-preview/.github/workflows/snake.yml`](./github-profile-preview/.github/workflows/snake.yml) — contribution snake Action
-- [`github-profile-preview/HOW_TO_PROMOTE.md`](./github-profile-preview/HOW_TO_PROMOTE.md) — how to replace the live profile
+1. **Merge PR #1** in this repo (optional — keeps preview + backup on GitHub).
+2. **Push files to `musavirchukkan/musavirchukkan`** — this is what updates your live profile (see DEPLOY.md).
 
-### Live profile (unchanged)
-
-https://github.com/musavirchukkan/musavirchukkan
-
-When you’re happy with the preview, say **confirmed — replace my live profile** and we’ll copy these files into `musavirchukkan/musavirchukkan`.
+Live profile (unchanged until Step 2): https://github.com/musavirchukkan/musavirchukkan

@@ -47,10 +47,12 @@ Or reply in the Cursor agent chat: **“confirmed — replace my live profile”
 
 ## After promoting
 
-1. **Actions**: Repo → Settings → Actions → General → allow Actions / allow GitHub Actions.
-2. **Run snake once**: Actions → “Generate contribution snake” → Run workflow.
-3. Wait for the `output` branch + SVGs, then the snake section in the README will render.
-4. No extra secrets are required for the snake workflow (`GITHUB_TOKEN` is enough).
+1. **Actions**: Repo → Settings → Actions → General → allow Actions with **read/write** permissions.
+2. **Run workflows once**: Actions → “Generate contribution snake” and “Refresh GitHub stats cards” → Run workflow.
+3. SVGs already live in `./assets/` — profile looks correct immediately; Actions refresh them daily.
+4. No extra secrets required (`GITHUB_TOKEN` is enough).
+
+See **[DEPLOY.md](./DEPLOY.md)** for the full step-by-step (PR merge vs live profile push).
 
 ## Optional add-ons (say the word)
 
