@@ -306,8 +306,8 @@ Full index → [musavirchukkan.in/projects](https://musavirchukkan.in/projects)
     <img height="168" src="./assets/github-stats.svg" alt="GitHub stats" />
   </picture>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=musavirchukkan&theme=dark&hide_border=true" />
-    <img height="168" src="https://streak-stats.demolab.com?user=musavirchukkan&theme=default&hide_border=true" alt="GitHub streak" />
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/github-streak-dark.svg" />
+    <img height="168" src="./assets/github-streak.svg" alt="GitHub streak" />
   </picture>
 </div>
 

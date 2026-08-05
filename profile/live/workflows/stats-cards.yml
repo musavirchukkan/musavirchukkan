@@ -55,8 +55,18 @@ jobs:
           path: assets/top-langs-dark.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Download streak cards
+        run: |
+          curl -fsSL "https://streak-stats.demolab.com/?user=musavirchukkan&theme=default&hide_border=true" \
+            -o assets/github-streak.svg
+          curl -fsSL "https://streak-stats.demolab.com/?user=musavirchukkan&theme=dark&hide_border=true" \
+            -o assets/github-streak-dark.svg
+
       - name: Commit & push assets
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: refresh GitHub stats cards"
-          file_pattern: assets/github-stats*.svg assets/top-langs*.svg
+          commit_message: "chore: refresh GitHub stats and streak cards"
+          file_pattern: |
+            assets/github-stats*.svg
+            assets/top-langs*.svg
+            assets/github-streak*.svg
